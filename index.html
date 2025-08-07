@@ -1,101 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>JETS INFO
-</title>
-<style>
-    * {
-        padding: 0;
-        margin: 0;
-    }
 
-    img {
-        width: 200px;
-        height: 150px;
-        border: 5px darkgray solid;
-        border-radius: 20px;
-    }
+<head>
+    <meta charset="UTF-8">
+    <title>JETS INFO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
 
-    table {
-        width: 100%;
-    }
+        img {
+            width: 200px;
+            height: 150px;
+            border: 5px darkgray solid;
+            border-radius: 20px;
+        }
 
-    th,
-    td {
-        padding: 20px;
-    }
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 100px;
+            font-style: italic;
+            margin: 30px 0;
+        }
 
-    .bold {
-        font-weight: 900
-    }
+        .color-bg {
+            background-color: rgb(104, 101, 101);
+            min-height: 100vh;
+            padding: 20px;
+        }
 
-    h1,
-    p {
-        font-style: italic;
-    }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 35px;
+            justify-items: center;
+        }
 
-    .color-bg {
-        background-color: rgb(104, 101, 101);
-        height: 640px;
-    }
-</style>
+        p {
+            text-align: center;
+            font-style: italic;
+            color: white;
+        }
+
+        @media only screen and (max-width: 90vh) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 35px;
+                justify-items: center;
+            }
+
+            h1 {
+                font-size: 60px;
+            }
+        }
+    </style>
+</head>
 
 <body>
-    <div class="bold color-bg">
-        <h1 style="color:white; text-align: center; font-size: 100px;"> JETS INFO</h1>
-
-        <table>
-
-            <tr>
-                <td>
-                    <a href="jf17.html">
-                        <img src="jf17.jpg">
-                        <p style="text-align: center;">jf17</p>
-                </td>
-
-                <td>
-                    <a href="f16.html">
-                        <img src="f16.webp">
-                        <p style="text-align: center">F16</p>
-                </td>
-
-                <td>
-                    <a href="mirage.html">
-                        <img src="mirage.jpeg">
-                        <p style="text-align: center;">MIRAGE2000</p>
-                </td>
-                <td>
-                    <a href="chendugu j-10.html">
-                        <img src="j10.jpeg">
-                        <p style="text-align: center">CHENGUDU</p>
-                    </a>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a href="F35.html">
-                        <img src="F35.jpeg">
-                        <p style="text-align: center">F35</p>
-                    </a>
-                </td>
-                <td>
-                    <a href="SU 57.html">
-                        <img src="SU57.jpeg">
-                        <p style="text-align: center;">SU-57</p>
-                </td>
-                <td>
-                    <a href="rafale.html">
-                        <img src="rafale.jpeg">
-                        <p style="text-align: center;">Rafale</p>
-                </td>
-                <td>
-                    <a href="TURKEY.html">
-                        <img src="Kaan.jpg">
-                        <p style="text-align: center;">KAAN MAIDEN</p>
-                </td>
-            </tr>
-        </table>
+    <div class="color-bg">
+        <h1>JETS INFO</h1>
+        <div class="container">
+            <div>
+                <a href="jf17.html">
+                    <img src="jf17.jpg">
+                    <p>JF-17</p>
+                </a>
+            </div>
+            <div>
+                <a href="f16.html">
+                    <img src="f16.webp">
+                    <p>F-16</p>
+                </a>
+            </div>
+            <div>
+                <a href="mirage.html">
+                    <img src="mirage.jpeg">
+                    <p>MIRAGE 2000</p>
+                </a>
+            </div>
+            <div>
+                <a href="chendugu j-10.html">
+                    <img src="j10.jpeg">
+                    <p>CHENGDU J-10</p>
+                </a>
+            </div>
+            <div>
+                <a href="F35.html">
+                    <img src="F35.jpeg">
+                    <p>F-35</p>
+                </a>
+            </div>
+            <div>
+                <a href="SU 57.html">
+                    <img src="SU57.jpeg">
+                    <p>SU-57</p>
+                </a>
+            </div>
+            <div>
+                <a href="rafale.html">
+                    <img src="rafale.jpeg">
+                    <p>Rafale</p>
+                </a>
+            </div>
+            <div>
+                <a href="TURKEY.html">
+                    <img src="Kaan.jpg">
+                    <p>KAAN MAIDEN</p>
+                </a>
+            </div>
+        </div>
     </div>
-
 </body>
 
 </html>
