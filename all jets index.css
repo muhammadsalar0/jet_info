@@ -67,6 +67,10 @@ img {
     margin: 10px;
 }
 
+.img-object {
+    width: 25%,
+}
+
 .feature-text h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
