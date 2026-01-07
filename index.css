@@ -11,7 +11,10 @@ img {
     border: 5px darkgray solid;
     border-radius: 20px;
 }
-
+img:hover {
+            transform: scale(1.1);
+            transition: linear 0.5s;
+        } 
 h1 {
     color: white;
     text-align: center;
